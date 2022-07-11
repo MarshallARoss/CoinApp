@@ -23,4 +23,6 @@ class DeveloperPreview {
     
     let coin = Coin(id: "bitcoin", symbol: "btc", name: "Bitcoin", image: "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", currentPrice: 20432, marketCap: 389647322602, marketCapRank: 1, fullyDilutedValuation: 429080876801, totalVolume: 24980550641, high24H: 21238, low24H: 20283, priceChange24H: -198.51940543184173, priceChangePercentage24H: -0.96224, marketCapChange24H: -3699682771.840393, marketCapChangePercentage24H: -0.94056, circulatingSupply: 19070050.0, totalSupply: 21000000.0, maxSupply: 21000000.0, ath: 69045, athChangePercentage: -70.18421, athDate: "2021-11-10T14:24:11.849Z", atl: 67.81, atlChangePercentage: 30259.15749, atlDate: "2013-07-06T00:00:00.000Z", lastUpdated: "2022-06-17T22:31:51.063Z", sparklineIn7D: sparkline, priceChangePercentage24HInCurrency: -0.9622411054767693, currentHoldings: 24)
     
+    let homeVM = HomeViewModel()
+    
 }
