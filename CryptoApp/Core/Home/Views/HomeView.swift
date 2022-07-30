@@ -25,7 +25,7 @@ struct HomeView: View {
             //content layer
             VStack {
                 homeheader
-                
+                   
                 HomeStatsView(showPortfolio: $showPortfolio)
                 
                 SearchBarView(searchText: $vm.searchText)
@@ -44,6 +44,11 @@ struct HomeView: View {
                 
                 Spacer(minLength: 1)
             }
+            .refreshable {
+                vm.reloadData()
+            }
+            
+         
         
         }
     }
@@ -123,6 +128,17 @@ extension HomeView {
             }
             Text("price")
                 .frame(width: UIScreen.main.bounds.width/3, alignment: .trailing)
+            
+            
+            Button {
+                withAnimation(.linear(duration: 2.0)) {
+                    vm.reloadData()
+                }
+            } label: {
+                Image(systemName: "goforward")
+            }
+            .rotationEffect(Angle(degrees: vm.isLoading ? 360 : 0), anchor: .center)
+
         }
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)

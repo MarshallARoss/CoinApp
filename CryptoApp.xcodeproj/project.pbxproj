@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB39B28028931E3C0010A498 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB39B27F28931E3C0010A498 /* PortfolioDataService.swift */; };
 		AB39B28328931E610010A498 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB39B28128931E610010A498 /* PortfolioContainer.xcdatamodeld */; };
+		AB39B2BB2894C2E20010A498 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB39B2BA2894C2E20010A498 /* HapticManager.swift */; };
 		AB3E6736287BD1AE0009B388 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E6735287BD1AE0009B388 /* HomeViewModel.swift */; };
 		AB3E6739287C9F250009B388 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E6738287C9F250009B388 /* CoinDataService.swift */; };
 		ABE3C162288B840F0066009A /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3C161288B840F0066009A /* NetworkingManager.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		AB39B27F28931E3C0010A498 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		AB39B28228931E610010A498 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
+		AB39B2BA2894C2E20010A498 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		AB3E6735287BD1AE0009B388 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		AB3E6738287C9F250009B388 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		ABE3C161288B840F0066009A /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				ABE3C161288B840F0066009A /* NetworkingManager.swift */,
 				ABE3C16A288DDA070066009A /* LocalFileManager.swift */,
+				AB39B2BA2894C2E20010A498 /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				ABE949BA285D2D5A00C9CDDE /* CircleButtonAnimationView.swift in Sources */,
 				ABE3C169288CF1400066009A /* CoinImageViewModel.swift in Sources */,
 				ABE82E17285D40C800CAC1C4 /* PreviewProvider.swift in Sources */,
+				AB39B2BB2894C2E20010A498 /* HapticManager.swift in Sources */,
 				ABE3C17B28919D520066009A /* PortfolioView.swift in Sources */,
 				ABE82E19285D448700CAC1C4 /* Double.swift in Sources */,
 				ABE3C167288CEE4B0066009A /* CoinImageService.swift in Sources */,
