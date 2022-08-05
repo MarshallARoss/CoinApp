@@ -63,7 +63,7 @@ extension SettingsView {
                     .resizable()
                     .frame(width: 100, height: 100)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                Text("This app was created by following one of Nick's amazing Swiftful Thinking tutorials! Thanks Nick! Subscribe on youtube @SwiftfulThinking.")
+                Text("This app was inspired by Nick from Swiftful Thinking! Thanks Nick!  @SwiftfulThinking.")
                     .font(.callout)
                     .fontWeight(.medium)
                     .foregroundColor(Color.theme.accent)
