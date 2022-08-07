@@ -27,12 +27,13 @@ struct CryptoAppApp: App {
                         .navigationBarHidden(true)
                 }
                 .environmentObject(homeViewModel)
+                .navigationViewStyle(.stack)
                 
                 ZStack {
                     if showLaunchView {
                         LaunchView(showLaunchView: $showLaunchView)
-                            .transition(.move(edge: .leading))
-                    }
+                            .transition(.move(edge: .top))
+                            }
                 }.zIndex(2.0)
             }
         }

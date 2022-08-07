@@ -53,7 +53,7 @@ struct LaunchView: View {
                 if counter == lastIndex + 12 {
                     counter = 0
                     loops += 1
-                    if loops >= 3{
+                    if loops >= 2 {
                         showLaunchView = false
                         
                     }
