@@ -24,10 +24,14 @@ class NetworkingManager {
     
     static func download(url: URL) -> AnyPublisher<Data, Error> {
         return URLSession.shared.dataTaskPublisher(for: url)
-        .subscribe(on: DispatchQueue.global(qos: .default))
-        .tryMap({try handleURLResponse(output: $0, url: url)})
-        .receive(on: DispatchQueue.main)
-        .eraseToAnyPublisher()
+        //data task publisher automatically moves to a background thread. No need to add "subscribe"
+        //.subscribe(on: DispatchQueue.global(qos: .default))
+            .tryMap({try handleURLResponse(output: $0, url: url)})
+            //recieving on main thread here moves decode work to main thread. We want to keep it on the background thread. Moved recieves to after decode in subscribers.
+            //.receive(on: DispatchQueue.main)
+            //retries if handler fails
+            .retry(3)
+            .eraseToAnyPublisher()
     }
     
     static func handleURLResponse(output: URLSession.DataTaskPublisher.Output, url: URL) throws -> Data {
