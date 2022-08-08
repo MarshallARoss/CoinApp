@@ -19,20 +19,24 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                devSection
-                nickSection
-                coinSection
-                appSection
-            }
-            .font(.headline)
-            .tint(.blue)
-            .listStyle(.grouped)
-            .navigationTitle("Settings")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading, content: {
-                        XMarkButton
-                    })
+            ZStack {
+                Color.theme.background.ignoresSafeArea()
+                
+                List {
+                    devSection
+                    nickSection
+                    coinSection
+                    appSection
+                }
+                .font(.headline)
+                .tint(.blue)
+                .listStyle(.grouped)
+                .navigationTitle("Settings")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading, content: {
+                            XMarkButton
+                        })
+                }
             }
             }
     }
